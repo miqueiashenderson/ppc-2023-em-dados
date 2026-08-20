@@ -7,6 +7,7 @@
     "prerequisitos": [
       "Fundamentos de Matemática para Ciência da Computação II"
     ],
+    "corequisitos": [],
     "ementa": "Sistemas de equações lineares. Espaços Vetoriais. Transformações Lineares. Autovalores e Auto-vetores. Diagonalização de Operadores Lineares. Aplicações.",
     "bibliografia_basica": [
       "1. Anton, Howard E Rorres, Chris. 2001. Álgebra Linear Com Aplicações. 8o. Ed. Porto Alegre: Bookman.",
@@ -29,6 +30,7 @@
     "prerequisitos": [
       "Projeto de Software"
     ],
+    "corequisitos": [],
     "ementa": "Diferenciação entre Modelos de processo, de negócio, de dados e de objetos. Modelagem de processos de negócio. Construção e análise de um caso de negócio. Métodos de análise e projeto. Técnicas de levantamento de requisitos. Modelagem de requisitos de sistema com casos de uso. Rastreabilidade de requisitos. Análise e modelagem orientados a objeto. Da análise para o projeto de um sistema. Linguagens para representação de modelos. Ferramentas para Análise e Projeto de um sistema.",
     "bibliografia_basica": [
       "1. Hoffer, J. A., George J., Valacich J., 2013. Modern Systems Analysis and Design, 7th Edition, Prentice Hall.",
@@ -48,10 +50,10 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Estruturas de Dados",
-      "Algoritmos",
+      "Estruturas de Dados e Algoritmos",
       "Teoria dos Grafos"
     ],
+    "corequisitos": [],
     "ementa": "Análise da complexidade de algoritmos. Prova de corretude de algoritmos recursivos e iterativos. Técnicas de algoritmos. Força Bruta, Backtracking, Branch and Bound, Método Guloso, Divisão e Conquista, Programação Dinâmica, Menor Caminho em Grafos e Árvore de Cobertura.",
     "bibliografia_basica": [
       "1. Brassard, G., Bratley, 1995. P. Fundamentals Of Algorithmics. Prentice-Hall.",
@@ -72,9 +74,9 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Estruturas de Dados",
-      "Algoritmos"
+      "Estruturas de Dados e Algoritmos"
     ],
+    "corequisitos": [],
     "ementa": "Banco de dados: conceitos e terminologia. Modelo de entidades e relacionamentos. Modelo relacional. Tradução de esquemas conceituais para esquemas relacionais. Sistemas de gerência de bancos de dados (SGBDs). Segurança. Integridade. Suporte transacional: controle de concorrência e recuperação contra falhas.",
     "bibliografia_basica": [
       "1. Elmasri, R. e Navathe, S. Sistemas de Banco de Dados, 7 Edição, Pearson Universidades (22 de abril de 2019), ISBN-13: 978-8543025001. 2019.",
@@ -84,7 +86,7 @@
     "bibliografia_complementar": [
       "1.Ramakrishnan, R.; Gehrke, J., 2002. Database Management Systems. Mcgraw Hill Higher Education, 3rd Edition. 2.Date, C. J., 2003. An Introduction to Database Systems. Addison Wesley, 8th Edition. 3.Celko, J., 2003. SQL Puzzles And Answers. Morgan Kaufmann, 2nd Edition.",
       "4. Patrick And Elizabeth O'Neil, 2001. Database: Principles, Programming, And Performance. Morgan Kaufmann. 2nd Edition.",
-      "5. Thomas M. Connolly, Carolyn E. Begg. , 2001. Database Systems: A Practical Approach To Design, Impl"
+      "5. Thomas M. Connolly, Carolyn E. Begg. , 2001. Database Systems: A Practical Approach To Design, Implementation And Management. Addison Wesley, 4th Edition."
     ]
   },
   {
@@ -95,6 +97,7 @@
     "prerequisitos": [
       "Fundamentos de Matemática para Ciência da Computação I"
     ],
+    "corequisitos": [],
     "ementa": "Funções de uma variável real. Limites e continuidade. Diferenciação. Aplicações da derivada. Integração. Relação entre derivação e integração. Funções transcendentes elementares.",
     "bibliografia_basica": [
       "1.Stewart, J., 2006. Cálculo. Volume 1, 5a Edição. Editora Thomson. 2.Swokowski, E. W., 1995. Cálculo Com Geometria Analítica, Vol. 1, 2a Edição, Makron Books.",
@@ -114,9 +117,9 @@
     "creditos": 4,
     "unidade_responsavel": "Matemática",
     "prerequisitos": [
-      "Cálculo Diferencial",
-      "Integral I"
+      "Cálculo Diferencial e Integral I"
     ],
+    "corequisitos": [],
     "ementa": "Técnicas de Integração. Aplicações da Integral Definida. Integrais Impróprias. Sucessões e Séries Numéricas. Séries de Potências. Fórmulas e Séries de Taylor- McLaurin.",
     "bibliografia_basica": [
       "1. Stewart, J., 2006. Cálculo. Volume 1 E 2, 5 Ed., Editora Thomson",
@@ -140,16 +143,20 @@
       "Paradigmas de Linguagens de Programação",
       "Teoria da Computação"
     ],
+    "corequisitos": [],
     "ementa": "Conceituação de tradutores (e.g. compiladores, interpretadores, montadores). Fases de um compilador. Análise léxica. Análise sintática. Análise semântica. Tratamento e recuperação de erros. Geração e Otimização de Código Intermediário. Tabela de símbolos. Geração e Otimização de Código Objeto. Ambientes de run-time. Ambiente de interpretação. Frameworks, Linguagens e Ferramentas para Construção de Compiladores. Compiladores JITS. Compiladores Avançados.",
     "bibliografia_basica": [
       "1.Aho, Alfred V.; Sethi, Ravi & Ullman, Jeffrey D., 2006. Compilers, Principles, Techiniques And Tools. Addison-Wesley.",
       "2. Duttemann, J., 2009. Assembly Language Step By Step. Wiley Publishing, Inc.",
-      "3. Muchnick, Steve., 1997. Advanced Compiler Design And Impl"
+      "3. Muchnick, Steve., 1997. Advanced Compiler Design And Implementation. Morgan Kaufmann."
     ],
     "bibliografia_complementar": [
       "1. Pittman, Thomas And Peters, J., , 1992. The Art Of Compiler Design - Theory And Practice. Prentice-Hall.",
       "2. Wirth, N., 1996. Compiler Construction, Addison-Wesley.",
-      "3. Fraser, C. H., Hanson, D. R., Hansen, D., 1995. A Retargetable C Compiler: Design And Impl"
+      "3. Fraser, C. H., Hanson, D. R., Hansen, D., 1995. A Retargetable C Compiler: Design And Implementation. Addison-Wesley.",
+      "4. FISCHER, C. N., LEBLANC Jr., R. J., 1988. Crafting A Compiler. The Benjamin/Cummings Publ. Comp.",
+      "5. MAK, R., 1996. Writing Compilers And Interpreters. 2nd Edition, John Wiley & Sons.",
+      "6. TREMBLAY, J. P., SORENSON, P. G., 1989. The Theory And Practice Of Compiler Writing. Mcgraw-Hill."
     ]
   },
   {
@@ -158,6 +165,7 @@
     "creditos": 4,
     "unidade_responsavel": "Ciências Sociais",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Noções Gerais de Direito. Direito do Trabalho. Direitos humanos. Relações étnico- raciais. Propriedade Intelectual e Industrial. Inovação Tecnológica. Legislação de Informática.",
     "bibliografia_basica": [
       "1. KUMPEL, V.F., SERAFIM, A.P.; ASSIS, O.Q.; ASSIS, A.E. Noções Gerais de Direito e Formação Humanística. 2ª. Ed. São Paulo: Editora Saraiva, 2012.",
@@ -176,6 +184,7 @@
     "creditos": 4,
     "unidade_responsavel": "Economia e Finanças",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Introdução ao estudo da Ciência Econômica. Introdução à Microeconomia: demanda e oferta de bens; equilíbrio no mercado e estruturas de mercado. Introdução à Macroeconomia: os agregados macroeconômicos: consumo, poupança, investimento; o setor público; Fundamentos de análise econômico- social de projetos; noções de matemática financeira aplicadas a análise de investimentos.",
     "bibliografia_basica": [
       "1. BUARQUE, C.. Avaliação econômica de projetos. Rio de Janeiro: Elsevier,",
@@ -203,6 +212,7 @@
       "Programação II",
       "Laboratório de Programação II"
     ],
+    "corequisitos": [],
     "ementa": "Processo de desenvolvimento de software. Gerência de projeto de software: estimativas de tempo e custo, análise de riscos, controle de qualidade. Engenharia de Requisitos. Validação e Verificação. Evolução de Software. Tópicos avançados.",
     "bibliografia_basica": [
       "1.Sommerville, I., 2011. Engenharia de Software. Pearson, 9a. Edição.",
@@ -225,6 +235,7 @@
     "prerequisitos": [
       "Introdução à Probabilidade"
     ],
+    "corequisitos": [],
     "ementa": "Introdução ao Software R. Geração de amostras aleatórias. Estatística descritiva usando o R. Estimação de Parâmetros. Testes de Hipóteses. Comparação entre Grupos. Testes não-paramétricos. Regressão e correlação.",
     "bibliografia_basica": [
       "1. Dalgaard, P., 2008. Introductory Statistics With R. Springer;",
@@ -246,8 +257,10 @@
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
       "Programação II",
-      "Laboratório de Programação II CO-REQUISITO: Laboratório de Estruturas de Dados",
-      "Algoritmos"
+      "Laboratório de Programação II"
+    ],
+    "corequisitos": [
+      "Laboratório de Estruturas de Dados e Algoritmos"
     ],
     "ementa": "Complexidade de algoritmos. Algoritmos de Ordenação. Tipo Abstrato de Dados. Estruturas de dados simples: vetor, fila, pilha, listas. Árvores binárias, heap binária, árvores balanceadas, tabelas hash. Estruturas de dados avançadas.",
     "bibliografia_basica": [
@@ -262,7 +275,8 @@
       "4. KNUTH, D. The Art Of Computer Programming, Vol 3: Sorting And Searching, 2nd Edição, Addison-Wesley, 1998;",
       "5. Sedgewick, R., Wayne, K. Algorithms. Fourth Edition. Pearson Technology Group, 2011;",
       "6. WEISS, M. A. Data Structures And Problem Solving Using Java, Addison-Wesley, 1998;",
-      "7. ZIVIANI, N. Projeto De Algoritmos Com Impl"
+      "7. ZIVIANI, N. Projeto De Algoritmos Com Implementação em Pascal E C, 4ª Edição, Editora Pioneira, 1999;",
+      "8. Levitin, A. Introduction to the Design and Analysis of Algorithms. 3rd Edition. Addison-Wesley, 2012."
     ]
   },
   {
@@ -271,12 +285,13 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Números reais, expoentes e raizes, expressões algébricas, equações; Polinômios; Funções; Domínio e contra-domínio; Função injetora, sobrejetora, bijetora; Função inversa; Composição de funções; Análise gráfica de funções, taxa de mudança, taxa de crescimento; Modelos lineares; Modelos quadráticos; Funções especiais: exponencial, logarítmica, trigonométricas; Modelagem com funções especiais; Sequências e Somatórios; Introdução à Lógica Proposicional e de Predicados; Teoria dos conjuntos; Princípios de Contagem.",
     "bibliografia_basica": [
       "1. Kenneth H. R. Discrete Mathematics And Its Applications. Seventh Edition, Mcgraw-Hill, 1998.",
       "2. Gersting, J.L. Fundamentos Matemáticos Para Ciência Da Computação - Matemática Discreta e suas Aplicações. LTC, Sexta Edição, 2016.",
       "3. Medeiros V. Z., Caldeira, A.M., Da Silva L. M. O., Machado, M.A.S. Pré-Cálculo. Segunda Edição, Cengage Learning, 2013.",
-      "4. Iezzi et al. Coleção Fundamentos da Matemática El"
+      "4. Iezzi et al. Coleção Fundamentos da Matemática Elementar, São Paulo: Editora Atual, 8ª Edição, 2004"
     ],
     "bibliografia_complementar": [
       "Graham, R.L., Knuth, D.E., Patashnik, O., Concrete Mathematics: A Foundation For Computer Science, 2nd Edition, Addison-Wesley Professional, 1994. Lipschutz, S., Lipson, M., Matemática Discreta, Bookman Companhia Ed, 2004. Bert K. Waits. Pré-Cálculo. Segunda Edição, Pearson, 2013."
@@ -290,6 +305,7 @@
     "prerequisitos": [
       "Fundamentos de Matemática para Ciência da Computação I"
     ],
+    "corequisitos": [],
     "ementa": "Técnicas de Demonstração Matemática; Indução e Recursividade; Aritmética Modular; Divisibilidade; Inteiros e Números Primos; Aplicações da Teoria dos Números; Grupos; Anéis, Corpos e Polinômios; Detecção e Correção de Erros; Funções Geradoras.",
     "bibliografia_basica": [
       "1. Kenneth H. R. Discrete Mathematics and its Applications. Seventh Edition, Mcgraw-Hill, 1998.",
@@ -312,6 +328,7 @@
     "prerequisitos": [
       "Teoria da Computação"
     ],
+    "corequisitos": [],
     "ementa": "Introdução. Agentes Inteligentes e Sistemas Multiagentes. Resolução de Problemas e Estratégias de Busca. Representação do Conhecimento e Raciocínio. Tratamento de Incerteza. Aprendizagem. Comunicação. Percepção. Ação. Aplicações e IA Distribuída. Projeto de Sistemas Inteligentes.",
     "bibliografia_basica": [
       "1. RUSSELL, S.J., NORVIG Inteligência Artificial - Uma Abordagem Moderna, 4a Ed., 2022, Editora GEN LTC.",
@@ -332,6 +349,7 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Visão Geral do Curso de Ciência da Computação. Sistemas de Computação, Aplicações do Computador e Evolução Histórica. A Informação e sua Representação. Sistemas de Numeração. Conceitos Básicos de Circuitos Digitais (Álgebra de Boole, Portas Lógicas e Circuitos Combinacionais). Introdução ao Hardware de um Sistema Computacional (Unidade Central de Processamento, Memória, Sistemas de Entrada e Saída). Introdução ao Software de um Sistema Computacional (Software Básico e Software Aplicativo). Conceitos Básicos da Arquitetura de Computadores. Projeto de um Sistema Computacional. Tópicos avançados.",
     "bibliografia_basica": [
       "1. Capron, H., Johnson, J., Introdução à Informática. Ed. Pearson Prentice Hall.",
@@ -354,9 +372,9 @@
     "creditos": 4,
     "unidade_responsavel": "Estatística",
     "prerequisitos": [
-      "Cálculo Diferencial",
-      "Integral II"
+      "Cálculo Diferencial e Integral II"
     ],
+    "corequisitos": [],
     "ementa": "Análise Exploratória de Dados. Probabilidade. Probabilidade Condicional. Teorema de Bayes. Variáveis Aleatórias Discretas e Contínuas. Valor Esperado e Variância. Modelos Probabilísticos para Variáveis Discretas e Contínuas.",
     "bibliografia_basica": [
       "1. Bussab, W. O., Morettin, P. A., Estatística Básica. 5 Ed. São Paulo: Saraiva, 2002.",
@@ -378,8 +396,10 @@
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
       "Programação II",
-      "Laboratório de Programação II CO-REQUISITO: Estruturas de Dados",
-      "Algoritmos"
+      "Laboratório de Programação II"
+    ],
+    "corequisitos": [
+      "Estruturas de Dados e Algoritmos"
     ],
     "ementa": "Uso de ferramentas de desenvolvimento. Aprofundamento prático dos assuntos vistos na disciplina Estruturas de Dados.",
     "bibliografia_basica": [
@@ -395,7 +415,8 @@
       "4. Knuth, D. The Art of Computer Programming, Vol 3: Sorting and Searching, 2nd edição, Addison-Wesley, 1998.",
       "5. Sedgewick, R., Wayne, K. Algorithms. Fourth Edition. Pearson Technology Group, 2011;",
       "6. Weiss, M. A. Data Structures and Problem Solving Using Java, Addison-Wesley,",
-      "7. Ziviani, N. Projeto de Algoritmos com Impl"
+      "7. Ziviani, N. Projeto de Algoritmos com Implementação em Pascal e C, 4ª edição, Editora Pioneira, 1999.",
+      "8. Levitin, A. Introduction to the Design and Analysis of Algorithms. 3rd Edition. Addison-Wesley, 2012."
     ]
   },
   {
@@ -403,8 +424,9 @@
     "carga_horaria": 60,
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
-    "prerequisitos": [
-      "CO-REQUISITO: Programação I"
+    "prerequisitos": [],
+    "corequisitos": [
+      "Programação I"
     ],
     "ementa": "Uso de ferramentas de desenvolvimento. Aprofundamento prático dos assuntos vistos na disciplina Programação I.",
     "bibliografia_basica": [
@@ -427,7 +449,10 @@
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
       "Programação I",
-      "Laboratório de Programação I CO-REQUISITO: Programação II"
+      "Laboratório de Programação I"
+    ],
+    "corequisitos": [
+      "Programação II"
     ],
     "ementa": "Uso de ferramentas de desenvolvimento. Aprofundamento prático dos assuntos vistos na disciplina Programação II.",
     "bibliografia_basica": [
@@ -446,6 +471,7 @@
     "creditos": 4,
     "unidade_responsavel": "Letras",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Estudo da língua/linguagem em diferentes contextos e situações de uso. Práticas de leitura e produção textual em diferentes contextos. Critérios de textualidade.",
     "bibliografia_basica": [
       "1. FARACO, Carlos A.; VIEIRA, Francisco E. Escrever na Universidade – Fundamentos. São Paulo: Parábola, 2019.",
@@ -468,6 +494,7 @@
     "prerequisitos": [
       "Fundamentos de Matemática para Ciência da Computação II"
     ],
+    "corequisitos": [],
     "ementa": "Noção de argumento, validade. Lógica proposicional: sintaxe e semântica. Formas normais. Métodos de decisão. Lógica de predicados: linguagem e modelos. Métodos e estratégias de resolução. Aplicações em Computação.",
     "bibliografia_basica": [
       "1. Michael R. A. Ruth, M.D.R. Logic in Computer Science, Modelling and Reasoning about Systems. Cambridge University Press.",
@@ -489,6 +516,7 @@
     "prerequisitos": [
       "Estatística Aplicada"
     ],
+    "corequisitos": [],
     "ementa": "Ciência, o método científico e a ciência da computação; Como realizar uma pesquisa empírica; O processo experimental: identificação de objetivos, planejamento de experimentos; Análise de dados e estatística; Técnicas e ferramentas para modelagem e medição de desempenho; Ilustrações de aplicações de técnicas e ferramentas para modelagem e medição de áreas da computação (p.ex., sistemas distribuídos, engenharia de software); Validação de investigações empíricas; Validação de modelos; Planejamento de estudos de caso; Planejamento e execução de surveys; Leitura de um artigo científico; Como escrever um artigo científico; Como preparar uma apresentação e apresentar um trabalho. Reprodutibilidade de pesquisa; Open Science; Revisão de artigos científicos; Trabalhos em grupo sobre conteúdo da ementa.",
     "bibliografia_basica": [
       "1. Wazlawick, R. 2009. Metodologia de Pesquisa para Ciência da Computação, Editora Campus.",
@@ -516,6 +544,7 @@
     "prerequisitos": [
       "Introdução à Computação"
     ],
+    "corequisitos": [],
     "ementa": "Visão Geral da Arquitetura e Organização de Computadores. Conceitos Básicos de Circuitos Digitais (Circuitos Combinacionais e Circuitos Sequenciais). Estrutura Básica de Computadores. A Unidade Central de Processamento. Estruturas de Barramentos. Organização de Memória. Sistemas de Entrada/Saída. Estrutura Básica da Arquitetura de Computadores. Suporte ao Sistema Operacional. Modos de Endereçamento. Tipos de Dados. Conjunto de Instruções. Interrupção. Paginação. Segmentação. Linguagens e Ferramentas. Sistemas Paralelos. Introdução a Sistemas Dedicados. Projeto de um Sistema Computacional. Tópicos avançados.",
     "bibliografia_basica": [
       "1. Harris, D. M. And Harris, S. L., Digital Design and Computer Architecture, 1st Edition, Elsevier, 2007.",
@@ -540,6 +569,7 @@
       "Programação II",
       "Laboratório de Programação II"
     ],
+    "corequisitos": [],
     "ementa": "Conceitos e construções fundamentais em linguagens de programação: sintaxe, semântica, armazenamento, comandos, expressões, estruturas de controle, sistema de tipos, abstração e parametrização, encapsulamento, associações e escopo, reflexão e meta-programação. Paradigmas básicos e suas construções, conceitos fundamentais e estilo de programação: Imperativo, Funcional, Lógico, Orientado a Objetos, Concorrente, Funcional e Scripts. Novos Paradigmas, suas construções, conceitos fundamentais e estilo de programação.",
     "bibliografia_basica": [
       "1. Watt, D. Programming Language Design Concepts, John Wiley & Sons, 2004.",
@@ -562,6 +592,7 @@
     "prerequisitos": [
       "Sistemas Operacionais"
     ],
+    "corequisitos": [],
     "ementa": "Introdução à programação concorrente. Conceitos básicos. Exclusão mútua. Sincronização usando memória compartilhada. Concorrência em linguagens de programação. Problemas clássicos de programação concorrente. Resolução de problemas.",
     "bibliografia_basica": [
       "1. Maurice H., Shavit,N. The art of multiprocessor programming, primeira edição, Morgan Kaufmann, 2008.",
@@ -581,8 +612,9 @@
     "carga_horaria": 60,
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
-    "prerequisitos": [
-      "CO-REQUISITO: Laboratório de Programação I"
+    "prerequisitos": [],
+    "corequisitos": [
+      "Laboratório de Programação I"
     ],
     "ementa": "Conceitos básicos de linguagens de programação. Algoritmos. Noções básicas de programação. Resolução de problemas. Tipos de dados. Entrada e Saída. Decisões. Laços. Funções. Noções de estruturas de dados: listas, conjuntos, vetores, matrizes e mapas. Introdução a recursividade. Técnicas básicas de boa programação. Tratamento de erros. Testes.",
     "bibliografia_basica": [
@@ -605,7 +637,10 @@
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
       "Programação I",
-      "Laboratório de Programação I CO-REQUISITO: Laboratório de Programação II"
+      "Laboratório de Programação I"
+    ],
+    "corequisitos": [
+      "Laboratório de Programação II"
     ],
     "ementa": "Modularização de programas. Uso de objetos. Criação de classes. Encapsulamento. Herança e composição. Polimorfismo. Tipos abstratos de dados. Tipos de coleções de objetos. Tratamento de erros com exceções. Testes de unidade. Regras básicas de design e refatoramento. Criação e uso de arquivos. Recursividade.",
     "bibliografia_basica": [
@@ -626,11 +661,10 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Estruturas de Dados",
-      "Algoritmos",
-      "Laboratório de Estruturas de Dados",
-      "Algoritmos"
+      "Estruturas de Dados e Algoritmos",
+      "Laboratório de Estruturas de Dados e Algoritmos"
     ],
+    "corequisitos": [],
     "ementa": "Fundamentos; princípios de projeto de software (modularidade, coesão, acoplamento); paradigmas de projeto (funcional, orientado a objetos, outros); projeto orientado a objetos; linguagem de modelagem; abstração, herança, interfaces; bibliotecas e frameworks; padrões de design; noções de arquitetura de software.",
     "bibliografia_basica": [
       "1.Gamma, E.; Helm, R.; Johnson, R.; Vlissides, J., 1995. Design Patterns: Elements Of Reusable Object-Oriented Software. Addison Wesley Longman.",
@@ -641,7 +675,7 @@
       "1.Fowler, M., 2000. UML Essencial – Um Breve Guia Para A Linguagem Padrão De Modelagem De Objetos; Bookman.",
       "2. Larman, C., 2002. Utilizando UML E Padrões; 2ª Edição; Bookman.",
       "3. Martin, R., 2012. Código Limpo. Alta Books, Edição 1.",
-      "4. Beck, K., 2013. Padrões de Impl"
+      "4. Beck, K., 2013. Padrões de Implementação. Bookman, Edição 1."
     ]
   },
   {
@@ -653,6 +687,7 @@
       "Engenharia de Software",
       "Análise de Sistemas"
     ],
+    "corequisitos": [],
     "ementa": "Desenvolvimento de um projeto prático em computação. Definição do problema. Análise de requisitos. Estudo de viabilidade. Análise do domínio do problema. Projeto arquitetural. Projeto de baixo nível. Implementação. Testes. Cronograma de execução.",
     "bibliografia_basica": [
       "1. Cohn, M. Succeeding with Agile: Software Development Using Scrum. Addison-Wesley, 2009;",
@@ -676,6 +711,7 @@
     "prerequisitos": [
       "Projeto em Computação I"
     ],
+    "corequisitos": [],
     "ementa": "Continuação do projeto em computação definido na disciplina. Projeto em Computação I.",
     "bibliografia_basica": [
       "1. \"O Segredo de Luísa\", Fernando Dolabela, Sextante, 2012.",
@@ -699,6 +735,7 @@
     "prerequisitos": [
       "Introdução à Computação"
     ],
+    "corequisitos": [],
     "ementa": "Conceitos básicos de redes de computadores. Conceitos de tecnologias de transmissão de sinais (analógicos e digitais). Apresentação/descrição, de forma geral, de hardware e software para redes de computadores. Modelos de referência OSI e TCP/IP de arquitetura de redes de computadores. Apresentação/descrição de funcionalidades definidas em cada uma das camadas das pilhas de protocolos do modelo OSI e TCP/IP. Estudo de casos.",
     "bibliografia_basica": [
       "1. Tanenbaum, A.S, Wetherall, D.J. Redes de Computadores, 6a Ed. - Ed. Pearson,",
@@ -719,9 +756,9 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Organização",
-      "Arquitetura de Computadores"
+      "Organização e Arquitetura de Computadores"
     ],
+    "corequisitos": [],
     "ementa": "Conceitos básicos de sistemas operacionais. Gerência de processador. “Multithreading”. Comunicação entre processos. Gerência de memória. Gerência de entrada/saída. Sistemas de arquivos. Virtualização. Tópicos avançados.",
     "bibliografia_basica": [
       "1. Tanenbaum, A. S. Sistemas Operacionais Modernos, 3a edição, Prentice-Hall Brasil, 2010.",
@@ -733,7 +770,7 @@
       "2. Venkateswaran, S. Essential Linux Device Drivers, Prentice Hall, 2008.",
       "3. Smith, J., Nair, R. Virtual Machines: Versatile Platforms for Systems and Processes, Morgan Kaufmann, 2005.",
       "4. Veras, M. Virtualização, Brasport, 2011.",
-      "5. Pate, S. D. UNIX Filesystems: Evolution, Design, and Impl"
+      "5. Pate, S. D. UNIX Filesystems: Evolution, Design, and Implementation, Wiley, 2003."
     ]
   },
   {
@@ -744,6 +781,7 @@
     "prerequisitos": [
       "Lógica para Computação"
     ],
+    "corequisitos": [],
     "ementa": "Fundamentos matemáticos. Autômatos finitos e linguagens regulares. Linguagens não- regulares (lema do bombeamento). Gramáticas livres de contexto e autômatos de pilha. Árvores de derivação e ambiguidade. Formas normais. Hierarquia de Chomsky. Algoritmos e máquinas de Turing, Tese de Church-Turing. Funções Turing- computáveis. Decidibilidade e indecidibilidade. Redução.",
     "bibliografia_basica": [
       "1. Sipser, M. Introdução à Teoria da Computação, Cengage Learning, 2011 (tradução da 2a edição).",
@@ -768,6 +806,7 @@
       "Programação II",
       "Laboratório de Programação II"
     ],
+    "corequisitos": [],
     "ementa": "Definição formal de grafo e representações. Tipos de grafos: simples, direcionado, completo, multigrafo, bipartido, caminho, ciclo, conectado, subgrafo, ponderado, gerador, induzido, árvore, árvore geradora, aleatório. Definição, propriedades, operações, algoritmos e problemas computacionais associados aos seguintes conceitos: grau e vizinhança, união e interseção de grafos, isomorfismo, decomposição, corte, cobertura, ponte, passeio, trilha, circuito, cintura, clustering, busca em árvores, co-árvore, matróides, vértice de corte, separações e blocos, orientações, conectividade, contração. Tópicos Avançados: Circuitos de Euler e Hamiltoniano; Fluxos em Redes; Grafos Planares: dualidade, subdivisões e homeomorfismo; Estabilidade e cliques; Coloração: problema aplicado a faces, arestas e vértices; Casamento: grafos arbitrários e grafos bipartidos. Noções básicas de complexidade de algoritmos e aproximações.",
     "bibliografia_basica": [
       "1. J.M.S.Simões-Pereira. Grafos e Redes: Teoria e Algoritmos Básicos. Editora Interciência. 2014.",
@@ -780,7 +819,7 @@
       "1. Szwarcfiter, J. L. Grafos e Algoritmos Computacionais. Editora Campus, 1986.",
       "2. Boaventura Netto, P. O. Grafos: Teoria, Modelos, Algoritmos. Edgar Blücher, 1996.",
       "3. Jonathan Gross and Jay Yellen. Handbook of Graph Theory, CRC Press, 2003.",
-      "4. Thomas H. Cormen. Introduction to Algorithms. McGrawHill, 2001. B."
+      "4. Thomas H. Cormen. Introduction to Algorithms. McGrawHill, 2001."
     ]
   },
   {
@@ -792,12 +831,13 @@
       "Metodologia Científica",
       "Língua Portuguesa"
     ],
+    "corequisitos": [],
     "ementa": "Acompanhamento de Projeto. Produção de monografia acerca do projeto realizado.",
     "bibliografia_basica": [
       "Bibliografia específica para o problema a ser abordado."
     ],
     "bibliografia_complementar": [
-      "Bibliografia específica para o problema a ser abordado. C. Componentes Curriculares Optativos"
+      "Bibliografia específica para o problema a ser abordado."
     ]
   },
   {
@@ -809,6 +849,7 @@
       "Redes de Computadores",
       "Sistemas Operacionais"
     ],
+    "corequisitos": [],
     "ementa": "Introdução à Administração de Sistemas. Programação Shell. Utilitários básicos do sistema operacional. Sistemas de infraestrutura de arquivos e de redes. Sistemas de controle de usuários, monitoramento e autenticação. Políticas e práticas na administração de sistemas de TI.",
     "bibliografia_basica": [
       "1.WARD, B. Como o Linux Funciona. NOVATEC, 2015. 2.NEMETH, E., SNYDER, G., HEIN, T. Unix And Linux System Administration Handbook. Prentice Hall, 2010. 3.FRISCH,Æ. Essential System Administration: Tools and Techniques for Linux and Unix Administration. O’Reilly, 2012."
@@ -826,6 +867,7 @@
     "prerequisitos": [
       "Banco de Dados I"
     ],
+    "corequisitos": [],
     "ementa": "O papel do administrador de banco de dados. Arquitetura de SGBD. Gerenciamento de recursos (memória, disco, usuários, transações). Ajuste de controle de concorrência. Ajuste de desempenho de banco de dados. Ajuste de desempenho de consultas SQL. Ajuste de esquemas. Backup e recuperação de falhas. Segurança e auditoria de banco de dados. Ferramentas de administração. Estudos de Caso. Tópicos avançados.",
     "bibliografia_basica": [
       "1.SHASHA, D., Bonnet, P. Database Tuning - Principles, Experiments and Troubleshooting Techniques. Morgan Kaufmann, 2003. 2.BRYLA, B., LONEY, K. Oracle Database 11g DBA Handbook. McGraw-Hill Osborne Media, 1st Edition, 2007. 3.MULLINS, C. Database Administration: The Complete Guide to DBA Practices and Procedures. Addison-Wesley Professional, 2nd Edition, 2012."
@@ -843,6 +885,7 @@
       "Programação I",
       "Laboratório de Programação I"
     ],
+    "corequisitos": [],
     "ementa": "Estudo da concepção e aplicação de estruturas de dados avançadas, e de técnicas de programação através da resolução de exercícios de maratona de programação. Grafos. Teoria dos Números. Geometria Computacional. Programação Dinâmica. Backtracking. Manipulação de Strings.",
     "bibliografia_basica": [
       "1.Cormen, T.,Leiserson, C., Rivest, R., Stein,C. Introduction to Algorithms. MIT Press,",
@@ -866,6 +909,7 @@
       "Programação I",
       "Laboratório de Programação I"
     ],
+    "corequisitos": [],
     "ementa": "Continuação do Estudo da concepção e aplicação de estruturas de dados avançadas, e de técnicas de programação através da resolução de exercícios de maratona de programação. Grafos. Teoria dos Números. Geometria Computacional. Programação Dinâmica. Backtracking. Manipulação de Strings.",
     "bibliografia_basica": [
       "1.Cormen, T.,Leiserson, C., Rivest, R., Stein,C. Introduction to Algorithms. MIT Press,",
@@ -889,6 +933,7 @@
       "Programação I",
       "Laboratório de Programação I"
     ],
+    "corequisitos": [],
     "ementa": "Continuação do Estudo da concepção e aplicação de estruturas de dados avançadas, e de técnicas de programação através da resolução de exercícios de maratona de programação. Grafos. Teoria dos Números. Geometria Computacional. Programação Dinâmica. Backtracking. Manipulação de Strings.",
     "bibliografia_basica": [
       "1.Cormen, T.,Leiserson, C., Rivest, R., Stein,C. Introduction to Algorithms. MIT Press,",
@@ -912,6 +957,7 @@
       "Programação I",
       "Laboratório de Programação I"
     ],
+    "corequisitos": [],
     "ementa": "Continuação do Estudo da concepção e aplicação de estruturas de dados avançadas, e de técnicas de programação através da resolução de exercícios de maratona de programação. Grafos. Teoria dos Números. Geometria Computacional. Programação Dinâmica. Backtracking. Manipulação de Strings.",
     "bibliografia_basica": [
       "1.Cormen, T.,Leiserson, C., Rivest, R., Stein,C. Introduction to Algorithms. MIT Press,",
@@ -932,8 +978,9 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Projeto de software"
+      "Projeto de Software"
     ],
+    "corequisitos": [],
     "ementa": "Fundamentos e conceitos de design de software. Definição e benefícios de Arquitetura de Software. Conceitos de Arquitetura de Software: Elementos arquiteturais; Stakeholders; Atributos de qualidade, requisitos arquiteturais; Visões arquiteturais; Decisões arquiteturais; Rastreabilidade; Técnicas de Design Arquitetural e Padrões arquiteturais. Documentação da arquitetura de um sistema software.",
     "bibliografia_basica": [
       "1. BASS, L., CLEMENTS, P., KAZMAN, R. Software Architecture in Practice (3rd Edition). Addison-Wesley, 2003.",
@@ -957,6 +1004,7 @@
     "prerequisitos": [
       "Introdução à Probabilidade"
     ],
+    "corequisitos": [],
     "ementa": "O processo de modelagem. Métodos de avaliação de desempenho de sistemas discretos. Introdução aos processos estocásticos. Teoria das filas. Medidas básicas de desempenho. Simulação digital. Ferramentas de modelagem e avaliação de desempenho.",
     "bibliografia_basica": [
       "1.BANKS, J.; CARSON, J.;NELSON, B. and NICOL, D. Discrete-Event System Simulation. Prentice-Hall, 2010.",
@@ -969,7 +1017,7 @@
       "3. KLEINROCK, L.; GAIL, R. Queueing Systems: Problems and Solutions. John Wiley & Sons, 1996.",
       "4. NELSON, R. Probability Stochastic Processes and Queueing Theory. Springer-Verlag,",
       "5. PAPOULIS, A. Probability, Random Variables and Stochastic Processes.3rd edition, McGrall-Hill, 1991.",
-      "6. BRITO, A. e TEIXEIRA, J. Simulação por Computador: Fundamentos e impl"
+      "6. BRITO, A. e TEIXEIRA, J. Simulação por Computador: Fundamentos e implementação de código em C e C++. Editora Publindústria, 2001."
     ]
   },
   {
@@ -980,6 +1028,7 @@
     "prerequisitos": [
       "Banco de Dados I"
     ],
+    "corequisitos": [],
     "ementa": "Modelos de dados orientados a objeto. Modelos de dados objeto-relacionais. SGBDs orientados a objeto. SGBDs objeto-relacionais. Projeto de bancos de dados objeto- relacionais. Módulos de um SGBD: Armazenamento, Indexação, Processamento de Transações e Controle de Concorrência. Sistemas NoSQL.",
     "bibliografia_basica": [
       "1. GARCIA-MOLINA, H.;ULLMAN, J. D.;WIDOM, J. D. Database Systems: the Complete Book. Prentice Hall, 2nd Edition, 2008.",
@@ -1000,6 +1049,7 @@
     "prerequisitos": [
       "Estatística Aplicada"
     ],
+    "corequisitos": [],
     "ementa": "Conceitos básicos de estatística, análise descritiva e exploratória, estatística inferencial, representação gráfica de dados, técnicas de visualização de dados, agrupamento de dados, redução de dimensionalidade, conceitos de inferência causal, técnicas para aquisição, limpeza e transformação de dados brutos para análise.",
     "bibliografia_basica": [
       "1. G. Grolemund, H. Wickham, R for Data Science, O’Reilly Media, janeiro 2017.",
@@ -1020,6 +1070,7 @@
     "prerequisitos": [
       "Estatística Aplicada"
     ],
+    "corequisitos": [],
     "ementa": "Regressão Simples e Multivariada; Regressão Ridge e Lasso; Regressão Logística; Naive Bayes; Árvores de Decisão; Ensembles; Avaliação de Modelos Preditivos; Explicabilidade de Modelos; Bias e Variância; Regularização; Séries Temporais; AutoML; Introdução às Redes Neurais Profundas.",
     "bibliografia_basica": [
       "1. An Introduction to Statistical Learning with Applications in R. Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani. Springer, 2013",
@@ -1037,9 +1088,9 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Estruturas de Dados",
-      "Algoritmos"
+      "Estruturas de Dados e Algoritmos"
     ],
+    "corequisitos": [],
     "ementa": "Fundamentos de Computação e Música, Fundamentos de Sistemas de Computação e Música. Design de Sistemas de Computação e Música. Produção de Sistemas de Computação e Música. Tendências em Computação e Música.",
     "bibliografia_basica": [
       "1. Keller,D., Budasz,R. Criação musical e tecnologias: teoria e prática interdisciplinar. ANPPOM, 2010.",
@@ -1060,12 +1111,11 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Cálculo Diferencial",
-      "Integral I",
+      "Cálculo Diferencial e Integral I",
       "Álgebra Linear I",
-      "Estruturas de Dados",
-      "Algoritmos"
+      "Estruturas de Dados e Algoritmos"
     ],
+    "corequisitos": [],
     "ementa": "Motivação, sistemas, tecnologias e aplicações gráficas, API gráficas, pipeline gráfico, aspectos numéricos, projeto e codificação de programas gráficos. Fundamentos de matemática, análise vetorial e álgebra geométrica aplicados à computação gráfica. Percepção visual, luz, cor, iluminação global e visualização 2D e 3D. Renderização - raytracing, sombreamento de superfícies, transparência e mapeamento de textura. Estruturas de dados para o processamento gráfico. Modelagem implícita. Modelos de reflexão. Animação computacional. Hardware gráfico. Projeto em Computação Gráfica.",
     "bibliografia_basica": [
       "1. ANGEL, E.; SHREINER, D. Interactive Computer Graphics: a Top-Down Approach with Shader-Based OpenGL. Addison-Wesley, 2012, 6th edition",
@@ -1088,6 +1138,7 @@
       "Banco de Dados I",
       "Projeto de Software"
     ],
+    "corequisitos": [],
     "ementa": "Introdução à metodologia DevOps. Integração e Entrega Contínua. Infraestrutura como código. Versionamento. Controle de mudanças. Gerência de Configuração. Monitoramento de aplicações. Tópicos Avançados.",
     "bibliografia_basica": [
       "1. VERONA, J. Practical DevOps. Packt Publishing, 2016.",
@@ -1107,6 +1158,7 @@
     "prerequisitos": [
       "Introdução à Probabilidade"
     ],
+    "corequisitos": [],
     "ementa": "Motivação: Importância da avaliação de investimentos, de benefícios e dos impactos de projetos, produtos e serviços de TI; como definir valor e preço de produtos e serviços de TI a partir desta avaliação. Definição de valor. Exemplos de exercícios de valoração. Revisão da Teoria de Probabilidades, de Álgebra Intervalar e da Teoria da Utilidade. Breve visita à análise de retorno financeiro, à análise de custos e de risco. Análise de cenários. Opções reais. Arcabouços e modelos para avaliação corporativa. Preço e precificação. Tipos de licenças de software. Aplicações à valoração e à precificação na área de Tecnologias da Informação. O papel e a importância do cliente. Projeto.",
     "bibliografia_basica": [
       "1. Mieritz, L. and Kirwin, B. Defining Gartner Total Cost of Ownership (e as referências lá feitas), https://barsand.files.wordpress.com/2015/03/gartner_tco.pdf, acesso 07 julho",
@@ -1134,6 +1186,7 @@
     "prerequisitos": [
       "Engenharia de Software"
     ],
+    "corequisitos": [],
     "ementa": "Introdução ao empreendedorismo: tópicos relacionados à criação e administração de empresas inovadoras em geral e no ramo de software. Software sob demanda: tópicos relacionados à prestação de serviços de desenvolvimento de software para clientes, sob demanda dos mesmos. Produto/Serviço de software: tópicos relacionados à criação de produtos e serviços próprios e as mais diversas formas de negociação dos mesmos. Criando um produto: tópicos relacionados à criação de produtos. Inovação: tópicos gerais sobre inovação tecnológica, desde propriedade intelectual à subvenção econômica.",
     "bibliografia_basica": [
       "\"Design Thinking: Uma metodologia poderosa para decretar o fim das velhas ideias\", Tim Brown, Alta Books, 2020 \"A startup enxuta: Como usar a inovação contínua para criar negócios radicalmente bem-sucedidos\", Eric Rais, Sextante, 2019. \"Plano de Negócios com o Modelo Canvas: Guia Prático de Avaliação de Ideias de Negócio\", José Dornelas, Empreender, 2020"
@@ -1154,6 +1207,7 @@
     "prerequisitos": [
       "Redes de Computadores"
     ],
+    "corequisitos": [],
     "ementa": "Conceituação de Gerência de Redes; Modelos de Gerência de Redes; Protocolos de Gerência de Redes; Modelo e Protocolo SNMP; Gerência de Equipamentos de Redes; Gerência de Hospedeiros; Gerência de Aplicações; Estudo de Caso: Instalação, Configuração e Uso de Ferramenta de Gerência de Rede.",
     "bibliografia_basica": [
       "1. Mauro, D. Schmidt, K., Essential SNMP, 2nd. Ed., O'Reilly, 2005.",
@@ -1173,6 +1227,7 @@
     "prerequisitos": [
       "Engenharia de Software"
     ],
+    "corequisitos": [],
     "ementa": "Introdução à Gestão de Projetos. Definição e benefícios de Gestão de Projetos. Ferramentas de apoio. Exemplos práticos de gestão de projetos de software.",
     "bibliografia_basica": [
       "1. PROJECT MANAGEMENT INSTITUTE. A Guide to the Project Management Body of Knowledge (PMBOK Guide). 6th ed. Project Management Institute, 2018.",
@@ -1195,6 +1250,7 @@
     "prerequisitos": [
       "Redes de Computadores"
     ],
+    "corequisitos": [],
     "ementa": "Conhecer os principais conceitos ligados ao tema Governança da Internet no mundo e no Brasil. Identificar o conjunto de atividades desenvolvidas por uma complexa rede de agentes envolvidos com a gerência e coordenação de recursos, processos, conteúdos, aplicativos e sistemas relacionados. Sensibilizar os alunos quanto à importância das diretrizes estratégicas relacionadas ao uso e ao desenvolvimento da Internet no Brasil na sua atuação como um profissional da área de computação. Conhecer e analisar o contexto histórico e atual da Governança da Internet de forma a motivar projetos de pesquisa e desenvolvimento que permitam a manutenção do nível de qualidade técnica e inovação no uso da Internet.",
     "bibliografia_basica": [
       "1. An Introduction to Internet Governance, Jovan Kurbalija, 2016, DiploFoundation (7th edition), ISBN: 978-99932-53-30-3.",
@@ -1211,6 +1267,7 @@
     "creditos": 2,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Introdução a habilidades socioemocionais (soft skills): o que são; qual a importância para um profissional de computação; Hard Skills vs. Soft Skills; exemplos práticos de uso. Visão geral das diferentes habilidades socioemocionais. Inteligência Emocional: autoconhecimento, autoregulação, influência e relacionamentos. Aspectos de comunicação e negociação.",
     "bibliografia_basica": [
       "1. Daniel Goleman, Marcos Santarrita. Inteligência emocional: A teoria revolucionária que redefine o que é ser inteligente. Objetiva. 2012.",
@@ -1227,6 +1284,7 @@
     "creditos": 2,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Introdução a habilidades socioemocionais (soft skills): o que são; qual a importância para um profissional de computação; Hard Skills vs. Soft Skills; exemplos práticos de uso. Visão geral das diferentes habilidades socioemocionais. Aspectos de planejamento, autogestão e auto-organização. Aspectos de liderança.",
     "bibliografia_basica": [
       "1. Christian Barbosa. A tríade do tempo. Buzz Editora. 2018.",
@@ -1244,6 +1302,7 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "O desenvolvimento científico e tecnológico para a sociedade, a cultura e o indivíduo. A revolução das tecnologias da informação. A emergência da nova economia: informacionalismo, globalização e sociedade em redes. As tecnologias da informação como construção social: relações de trabalho, carreira profissional, ética dos empreendimentos e propriedade intelectual. A política e a cidadania na sociedade do conhecimento.",
     "bibliografia_basica": [
       "CASTELLS, M. A Sociedade em Redes. Vol. 1. A Era da Informação: Economia, Sociedade e Cultura. 6. edição. São Paulo: Paz e Terra, 2010. CASTELLS, M. A Galáxia da Internet: reflexões sobre a Internet, os negócios e a sociedade. Rio de Janeiro: Jorge Zahar Ed., 2003. LÉVY, P. Cibercultura. Terceira edição. São Paulo: Editora 34, 2010."
@@ -1259,12 +1318,15 @@
     "creditos": 4,
     "unidade_responsavel": "Letras",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Desenvolvimento sistemático da competência comunicativa em língua estrangeira: compreensão e produção orais e escritas em nível elementar. Estudo básico do sistema fonológico da língua inglesa.",
     "bibliografia_basica": [
       "1. MILNER, Martin. World English 1. Cengage Learning. National Geographic Learning, USA, 2018."
     ],
     "bibliografia_complementar": [
-      "1. BOLTON, David; GOODEY, Noel. Trouble with prepositions, articles, nouns and word order. Guided discovery materials, exercises and teaching tips at el"
+      "1. BOLTON, David; GOODEY, Noel. Trouble with prepositions, articles, nouns and word order. Guided discovery materials, exercises and teaching tips at elementary and intermediate levels. London: Delta, 2001.",
+      "2. FINNIE, Sue; BOURDAIS, Danièle. Timesaver vocabulary activities: elementary. UK: Mary Glasgow Magazines, Scholastic Inc., 2001.",
+      "3. MURPHY, Raymond. Essential grammar in use: a self-study reference and practice book for elementary students of English, with answers. Cambridge: Cambridge University Press, 1990."
     ]
   },
   {
@@ -1276,21 +1338,19 @@
       "Redes de Computadores",
       "Sistemas Operacionais"
     ],
-    "ementa": "Introdução e panorama geral sobre os mecanismos de interconexão de redes, com ênfase nas principais tecnologias empregadas na comunicação entre domínios de acesso, agregação e transporte. O conteúdo abrange sistemas sem fio, como por exemplo Wi‑Fi 6, 6E e 7, métodos de coordenação espectral, além de infraestruturas ópticas e metálicas de acesso e backbone, como PON/GPON, xDSL, Ethernet de alta capacidade e arquiteturas de comutação e roteamento baseadas em MPLS. Software para interconexão de redes (a família de protocolos TCP/IP v4 e v6, incluindo estratégias de transição e coexistência entre versões). Hardware para interconexão de redes (p. ex. switches, routers, brouters, etc.). Comutação e serviços de camada 2 (VLANs, agregação de portas, Spanning Tree Protocol, DHCP Snooping). Roteamento unicast e multicast e tecnologias com garantias de serviço (QoS, MPLS, SD-WAN). Redes Definidas por Software (SDN e/ou OpenRAN) e cloud networking. Segurança em interconexão de redes. Tópicos avançados em interconexão de redes. Introdução à Gerência de Redes.",
+    "corequisitos": [],
+    "ementa": "Introdução e visão geral de interconexão de redes. Tecnologias de comunicação para interconexão de redes (p. ex. LPCD, GEth, xDSL, WiFi, WiMax, MPLS, etc.). Software para interconexão de redes (a família de protocolos TCP/IP v4 e v6). Hardware para interconexão de redes (p. ex. switchs, routers, brouters, etc.). Tecnologias com garantias de serviço. Tópicos avançados em interconexão de redes. Serviços em redes. Introdução à Gerência de Redes.",
     "bibliografia_basica": [
-      "1. Tanenbaum, A.S.; Wetherall, D.J. Redes de Computadores, 6ª Ed. – Ed. Pearson, 2010.",
-      "2. Kurose, J.F.; Ross, K.W. Computer Networking: A Top-Down Approach, 9ª Edição – Ed.  Pearson, 2025.",
-      "3. Peterson, L.; Davie, B. Software-Defined Networks: A Systems Approach, 2ª Ed. (acesso aberto, systemsapproach.org), 2021."
+      "1. Tanenbaum, A.S, Wetherall, D.J. Redes de Computadores, 6a Ed. - Ed. Pearson, 2010.",
+      "2. Kurose, J. F.; Ross, K.W. Redes de Computadores e a Internet: Uma abordagem Top- Down, 8a Edição, 2021.",
+      "3. Comer, D.E. Computer Networks and Internets, 5th Ed. - Ed. Prentice Hall, 2008."
     ],
     "bibliografia_complementar": [
-      "1. Comer, D.E. Internetworking with TCP/IP, Vol.1, 5th Ed. – Ed. Prentice Hall, 2005.",
-      "2. Oliviero, A.; Woodward, B. Cabling: The Complete Guide to Copper and Fiber-Optic Networking, 4th Ed. – Ed. Sybex, 2009.",
-      "3. Douglas, M.; Schmidt, K. Essential SNMP, 2nd Ed. – Ed. O'Reilly Media, 2005.",
-      "4. Allen, N. Network Maintenance and Troubleshooting Guide, 2nd Ed. – Ed. Addison Wesley, 2009.",
-      "5. Teare, D.; Paquet, C. Campus Network Design Fundamentals – Ed. Cisco Press, 2005.",
-      "6. Lee, G. Cloud Networking: Understanding Cloud-based Data Center Networks – Ed. Morgan Kaufmann, 2014.",
-      "7. Goransson, P.; Black, C.; Culver, T. Software Defined Networks: A Comprehensive Approach, 2nd Ed. – Ed. Morgan Kaufmann, 2016.",
-      "8. Feamster, N.; Rexford, J.; Zegura, E. 'The Road to SDN: An Intellectual History of Programmable Networks', ACM SIGCOMM Computer Communication Review, 2014."
+      "1. Comer, D.E. Internetworking with TCP/IP, Vol.1, 5th Ed. - Ed. Prentice Hall, 2005.",
+      "2. Oliviero, A., Woodward, B. Cabling: The Complete Guide to Copper and Fiber-Optic Networking, 4th Ed. - Ed. Sybex, 2009.",
+      "3. Douglas, M., Schmidth, K. Essential SNMP, 2nd Ed. - Ed. O’Reilly Media, 2005.",
+      "4. Allen, N. Network Maintenance and Troubleshooting Guide, 2nd Ed. - Ed. Addison Wesley, 2009.",
+      "5. Teare, D. Paquet, C. Campus Network Design Fundamentals - Ed. Cisco Press, 2005."
     ]
   },
   {
@@ -1299,9 +1359,9 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Estruturas de Dados",
-      "Algoritmos"
+      "Estruturas de Dados e Algoritmos"
     ],
+    "corequisitos": [],
     "ementa": "A interface com usuários: Definição; Importância de um projeto de interface centrado no usuário; breve histórico da interação humano-computador; características de interfaces gráficas para aplicações Desktop, Web e Mobile. Projeto contextual: gestão do desenvolvimento de software; usabilidade em desenvolvimento de software; ciclo da Engenharia da Usabilidade. Concepção de interfaces com o usuário: análise de requisitos; projeto da Tarefa, da Informação e da Interação; prototipagem; avaliação.",
     "bibliografia_basica": [
       "1. GALITZ, W. O. The Essential Guide to User Interface Design. John Wiley & Sons, Inc. 3rd ed. 2007.",
@@ -1322,6 +1382,7 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Fundamentos de jogos digitais. Design de jogos digitais. Produção e teste de jogos digitais. Tendências em jogos digitais.",
     "bibliografia_basica": [
       "1. SALEN, K.; ZIMMERMAN, E. Regras do Jogo Fundamentos do Design de Jogos, Volumes 1 a 4. São Paulo: Bluncher, 2012.",
@@ -1340,6 +1401,7 @@
     "creditos": 4,
     "unidade_responsavel": "Educação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Noções gerais sobre os aspectos lingüísticos, sociais, culturais da Libras. Uso do alfabeto digital. A Libras na educação bilíngue-bicultural de surdos. Introdução ao aprendizado da Libras, através de vivências interativas, com enfoque em seus aspectos gramaticais, textuais e culturais.",
     "bibliografia_basica": [
       "1. FELIPE, T. A. Introdução à Gramática da LIBRAS. Brasília: SEESP, série atualidades pedagógicas, Vol. III, 1997.",
@@ -1361,9 +1423,9 @@
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
       "Álgebra Linear I",
-      "Cálculo Diferencial",
-      "Integral II"
+      "Cálculo Diferencial e Integral II"
     ],
+    "corequisitos": [],
     "ementa": "Formulação, metodologia e técnicas para análise e solução numéricas de problemas de engenharia, economia, administração. Métodos e ferramentas de software para cálculo numérico. Fundamentos de computação digital e implicações para erros e estabilidade de algoritmos. Tipos e propagação de erros. Métodos para extração de raízes. Métodos para resolução de sistemas de equações lineares. Métodos para interpolação e ajustes de curvas. Métodos para integração e diferenciação numéricas. Análise de complexidade, erro e convergência de métodos numéricos. Exercícios de fixação. Estudos de casos. Trabalho de disciplina.",
     "bibliografia_basica": [
       "1. Hattori, M. T, & Queiroz, B. C. N., Métodos e Software Numéricos, Notas de Aulas, Sistemas e Computação da UFCG.",
@@ -1389,6 +1451,7 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Introdução a Métodos Formais. Definição e benefícios de Métodos Formais. Modelos e processos de desenvolvimento. Tipos de Métodos Formais. Especificação formal. Testes baseados em especificações formais. Verificação de modelos. Ferramentas de apoio.",
     "bibliografia_basica": [
       "1. OREGAN, Gerard. Mathematical Approaches to Software Quality. Springer, 2006.",
@@ -1410,9 +1473,9 @@
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
       "Álgebra Linear I",
-      "Cálculo Diferencial",
-      "Integral II"
+      "Cálculo Diferencial e Integral II"
     ],
+    "corequisitos": [],
     "ementa": "Otimização no contínuo, tratamento de restrições; Otimização discreta: métodos tradicionais, enumeração exaustiva, pesquisa local, branch-and-bound, programação dinâmica, programação inteira, programação inteira zero-um; Otimização global: Técnicas numéricas, recozimento simulado, pesquisa tabu, Algoritmos Evolucionários, Tomada de decisão multicritério, Analytic Hierarchy Process, Lógica fuzzy.",
     "bibliografia_basica": [
       "1. KORTE, B., VYGEN, J., Combinatorial Optimization: Theory and Algorithms, 4th edition, Springer, 2010.",
@@ -1431,10 +1494,10 @@
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
       "Álgebra Linear I",
-      "Cálculo Diferencial",
-      "Integral II",
+      "Cálculo Diferencial e Integral II",
       "Introdução à Probabilidade"
     ],
+    "corequisitos": [],
     "ementa": "Introdução à percepção por computador. Modalidades sensoriais e tipos de sensores. Visão por computador. Aquisição de imagem e sensores de visão. Pré-processamento e segmentação de imagens. Descrição, reconhecimento de padrões e decisão. Representação. Movimento. Rastreamento. Percepção acústica e de Linguagem Natural. Arquiteturas e aplicações.",
     "bibliografia_basica": [
       "1. Gonzalez and Woods, Digital Image Processing, Prentice Hall, 2008.",
@@ -1454,6 +1517,7 @@
     "creditos": 2,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Noções de didática. Recursos pedagógicos. Preparação de aulas e exercícios, execução e avaliação de resultados.",
     "bibliografia_basica": [
       "1. Astolfi, J.-P. Didática das Ciências, Papirus, 1995.",
@@ -1476,6 +1540,7 @@
     "prerequisitos": [
       "Prática de Ensino em Computação I"
     ],
+    "corequisitos": [],
     "ementa": "Noções avançadas de didática e preparação de atividades de educação em computação.",
     "bibliografia_basica": [
       "1. Astolfi, J.-P. Didática das Ciências, Papirus, 1995.",
@@ -1496,11 +1561,10 @@
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
       "Fundamentos de Matemática para Ciência da Computação II",
-      "Estruturas de Dados",
-      "Algoritmos",
-      "Laboratório de Estruturas de Dados",
-      "Algoritmos"
+      "Estruturas de Dados e Algoritmos",
+      "Laboratório de Estruturas de Dados e Algoritmos"
     ],
+    "corequisitos": [],
     "ementa": "Processamento e Pré-processamento de Texto; Representação Vetorial de Documentos e Palavras; K-NN para Busca Textual; Descoberta de Tópicos com LDA; Agrupamento com o K-Means; Naive Bayes; Modelos de Linguagem; Regressão Logística e Redes Neurais; Word Embeddings; Redes Neurais Recorrentes; Transfer Learning para NLP; Aplicações de NLP.",
     "bibliografia_basica": [
       "1. Dan Jurafsky and James H. Martin. Speech and Language Processing (3rd ed. draft),",
@@ -1521,6 +1585,7 @@
     "prerequisitos": [
       "Banco de Dados I"
     ],
+    "corequisitos": [],
     "ementa": "Introdução às linguagens de programação de banco de dados. Definição de variáveis e tipos de dados. Controle de Fluxo. Entrada e saída de dados. Cursores. Tratamento de erros e exceções. Construção de subprogramas (procedimentos, funções, pacotes, gatilhos). Utilização de subprogramas embutidos. SQL Avançado.",
     "bibliografia_basica": [
       "1. McLaughlin, M. Oracle Database 11g PL/SQL Programação. Alta Books, 2009.",
@@ -1542,9 +1607,11 @@
     "prerequisitos": [
       "Paradigmas de Linguagens de Programação"
     ],
+    "corequisitos": [],
     "ementa": "Paradigma de linguagens funcionais. Introdução a Lambda Calculus. Sintaxe e Semântica de uma Linguagem de Programação Funcional. Funções. Recursão. Tipos de Dados. Feições funcionais em linguagens de programação imperativas e orientadas a objetos.",
     "bibliografia_basica": [
-      "1. Simon Peyton Jones . The Impl"
+      "1. Simon Peyton Jones . The Implementation of Functional Programming Languages Prentice Hall, 1987; Cousineau, Guy and Michel Mauny. The Functional Approach to Programming. Cambridge, UK: Cambridge University Press, 1998;",
+      "2. MacLennan, Bruce J. Functional Programming: Practice and Theory. Addison- Wesley, 1990;"
     ],
     "bibliografia_complementar": [
       "1. Thompson, Simon. Haskell: The Craft of Functional Programming. Harlow, England: Addison-Wesley Longman Limited, 1996;",
@@ -1559,10 +1626,10 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Estruturas de Dados",
-      "Algoritmos",
-      "Laboratório de Estruturas de Dados"
+      "Estruturas de Dados e Algoritmos",
+      "Laboratório de Estruturas de Dados e Algoritmos"
     ],
+    "corequisitos": [],
     "ementa": "História e fundamentos da Web. Introdução à tríade de tecnologias web: HTML, CSS e JavaScript. Sintaxe e semântica de HTML (parser + DOM). Sintaxe e semântica de CSS (renderização). Sintaxe e semântica de JavaScript (conceitos básicos de programação revistos para JS: tipos de dados, controle de fluxo, funções e classes). Fundamentos de programação funcional com JavaScript. Programação assíncrona com JavaScript no browser (preemptive versus cooperative multitasking; pilha de execução vs fila de eventos; settimeout, setinterval, await, async, promises). Diferenças entre os runtimes de Python, Java e JavaScript (runtime vs language engine). Serviços básicos do browser (objetos, funções e APIs do browser, tais como window, document, Selection e Fetch). Conceitos de elemento e componente web.",
     "bibliografia_basica": [
       "1. Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web, Tim Berners Lee, 2000",
@@ -1584,8 +1651,9 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "créditos Programação para Web I"
+      "Programação para a Web I"
     ],
+    "corequisitos": [],
     "ementa": "Arquitetura e projeto de aplicações Web. APIs Web. Escalabilidade, controle de transações e segurança de aplicações Web. Tópicos Avançados.",
     "bibliografia_basica": [
       "1. Martin, Robert C., Código limpo: Habilidades práticas do Agile Software, Alta Books; 1ª edição, 2009.",
@@ -1605,6 +1673,7 @@
     "prerequisitos": [
       "Interconexão de Redes de Computadores"
     ],
+    "corequisitos": [],
     "ementa": "Conceituação em Projeto de Redes de Computadores; Metodologias para Projeto de Redes de Computadores; A Metodologia “Top-down” para Projeto de Redes de Computadores; Estudo de caso: projeto de uma Rede de Computadores com atendimento à um conjunto elaborado de requisitos",
     "bibliografia_basica": [
       "1. Oppenheimer, P. Top-down Network Design, 3rd Ed.; Cisco Press, 2010.",
@@ -1623,9 +1692,9 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [
-      "Organização",
-      "Arquitetura de Computadores"
+      "Organização e Arquitetura de Computadores"
     ],
+    "corequisitos": [],
     "ementa": "Visão geral de sistemas digitais. Metodologias para projeto de sistemas digitais. Análise e projeto de sistemas digitais. Tópicos avançados.",
     "bibliografia_basica": [
       "1. HARRIS, D. M. and HARRIS, S. L., Digital Design and Computer Architecture, RISC-V Edition. First Edition, 2021.",
@@ -1648,6 +1717,7 @@
       "Redes de Computadores",
       "Sistemas Operacionais"
     ],
+    "corequisitos": [],
     "ementa": "Introdução a conceitos de provisionamento, gerência e operação de sistemas de TI. Modelos de implantação da infraestrutura. Projeto e planejamento da infraestrutura. Monitoramento e operação dos serviços na infraestrutura. Provisionamento de recursos para serviços. Tópicos avançados.",
     "bibliografia_basica": [
       "1. THOMAS E., COPE, R., AND NASERPOUR, A. Cloud Computing Design Patterns. Prentice Hall Press, 2015.",
@@ -1657,7 +1727,9 @@
     "bibliografia_complementar": [
       "1. WITTIG, A., WITTIG A. Amazon Web Services in Action. Manning Publications Co.,",
       "2. BUMGARDNER, V.K.C. OpenStack in Action. Manning Publications Company, 2016.",
-      "3. RHOTON, J. Cloud Computing Explained: Impl"
+      "3. RHOTON, J. Cloud Computing Explained: Implementation Handbook for Enterprises. 2a edição, Recursive Press, 2009.",
+      "4. FEHLING C., LEYMANN F., RETTER, R., SCHUPECK W., ARBITTER, P. Cloud Computing Patterns: Fundamentals to Design, Build, and Manage Cloud Applications. Springer, 2014.",
+      "5. REESE, G. Cloud application architectures: building applications and infrastructure in the cloud. O'Reilly, 2009."
     ]
   },
   {
@@ -1669,6 +1741,7 @@
       "Estatística Aplicada",
       "Inteligência Artificial"
     ],
+    "corequisitos": [],
     "ementa": "Padrões e suas Representações. Sistema Típico de Reconhecimento de Padrões. Processos Supervisionado e Não-Supervisionado. Introdução ao Reconhecimento Estatístico de Padrões. Aprendizagem em Redes Neurais. Análise de Componentes Principais. Perceptrons de Simples e Múltiplas Camadas. Mapas Auto Organizáveis. Redes Neurais Recorrentes. Previsão e Análise de Séries Temporais. Aplicações.",
     "bibliografia_basica": [
       "1. GOODFELLOW, I., BENGIO, Y., COURVILLE, A. Deep Learning, 2016, MIT Press.",
@@ -1692,6 +1765,7 @@
     "prerequisitos": [
       "Banco de Dados I"
     ],
+    "corequisitos": [],
     "ementa": "Arquitetura de uma ferramenta de busca. Técnicas básicas e avançadas de recuperação textual. Técnicas de indexação textual. Modelo de recuperação vetorial e booleano. Busca na Web. Busca em dados semi-estruturados. Tópicos avançados.",
     "bibliografia_basica": [
       "1. Roger D. Peng and Elizabeth Matsui. The Art of Data Science. LeanPub,",
@@ -1717,6 +1791,7 @@
       "Redes de Computadores",
       "Sistemas Operacionais"
     ],
+    "corequisitos": [],
     "ementa": "Conceituação de Segurança em Sistemas de Tecnologia da Informação e Comunicações. Ferramentas de ataque, ameaças de segurança e vulnerabilidades típicas. Conceitos e Modelos de Esquemas de Criptografia; Conceitos e Esquemas de Aplicações de Autenticação e controle de acesso. Conceituação e Modelos de Firewall. Estudos de casos: Segurança em computação na nuvem, sistemas embarcados, Serviços Web e Internet.",
     "bibliografia_basica": [
       "1. VACCA, J. R., ed. Network and system security. Elsevier, 2013.",
@@ -1739,6 +1814,7 @@
     "prerequisitos": [
       "Banco de Dados I"
     ],
+    "corequisitos": [],
     "ementa": "Os conceitos, níveis e tipos de decisão nas organizações. Os estágios do processo decisório. Os modelos individuais de tomada de decisão. Os modelos organizacionais de tomada de decisão. Teorias, metodologias, técnicas e ferramentas aplicáveis à análise de decisões. Os conceitos de sistema de apoio à decisão. Os tipos de sistemas de apoio à decisão. Componentes de sistemas de apoio à decisão. Metodologias, técnicas e ferramentas de desenvolvimento de sistemas de apoio à decisão. Projeto e implementação de sistema de apoio à decisão focado em dados. Business Intelligence. Descoberta de Conhecimento em Bancos de Dados. Tópicos Avançados.",
     "bibliografia_basica": [
       "1. R. Sharda, D. Delen, E.Turban, Business Intelligence, Analytics and Data Science. 4th Edition. Pearson,2018.",
@@ -1763,6 +1839,7 @@
     "prerequisitos": [
       "Banco de Dados I"
     ],
+    "corequisitos": [],
     "ementa": "Conceitos básicos de Geoprocessamento. Fontes de dados espaciais. Introdução à Cartografia. Sistemas de Posicionamento Global. Representação de dados espaciais. Estruturas de Dados Espaciais. Bancos de Dados Espaciais. Análise Espacial. Servidores de Mapas. Serviços Baseados em Localização.",
     "bibliografia_basica": [
       "1. Paul Bolstad. GIS Fundamentals: A First Text on Geographic Information Systems, 6th edition, XanEdu, 2019.",
@@ -1787,6 +1864,7 @@
       "Redes de Computadores",
       "Sistemas Operacionais"
     ],
+    "corequisitos": [],
     "ementa": "Diferenças entre sistemas distribuídos e sistemas centralizados. Comunicação em sistemas distribuídos. Modelos de sistemas distribuídos. Sincronização em sistemas distribuídos. Arquitetura de Sistemas Distribuídos. Confiabilidade e segurança em sistemas distribuídos. Estudos de caso.",
     "bibliografia_basica": [
       "1. Couloris, G., Dollimore, J., Kindberg, T. Sistemas Distribuídos: conceitos e projeto, Bookman, 2013, 5a. Edição.",
@@ -1809,6 +1887,7 @@
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
     "prerequisitos": [],
+    "corequisitos": [],
     "ementa": "Refletir sobre as principais transformações promovidas pela economia digital tendo como foco a formação do profissional de TIC e o seu papel na compreensão dos desafios atuais e futuros. A compreensão dos impactos movidos pela economia digital contemplará temas diversos, abordando desde questões conceituais até as aplicações das tecnologias de transformação digital, estruturados em cinco categorias: (1) a economia que move as empresas e o mundo: onde estamos e aonde podemos chegar; (2) negócios da transformação digital; (3) acesso e adoção de meios digitais; (4) adequação do ecossistema regulatório e de inovação para o digital; (5) o desafio da confiança e da segurança na economia digital.",
     "bibliografia_basica": [
       "1. Série Digital da Fundação Dom Cabral - 5 e-books: AS 100 QUESTÕES MAIS INSTIGANTES SOBRE A ECONOMIA DIGITAL."
@@ -1823,7 +1902,10 @@
     "carga_horaria": 60,
     "creditos": 4,
     "unidade_responsavel": "Sistemas e Computação",
-    "prerequisitos": [],
+    "prerequisitos": [
+      "A depender da ementa da disciplina"
+    ],
+    "corequisitos": [],
     "ementa": "Ementa livre para tópicos nas áreas de Ciência da Computação.",
     "bibliografia_basica": [
       "Bibliografia especıf́ ica para o tópico a ser abordado."
@@ -1837,7 +1919,10 @@
     "carga_horaria": 30,
     "creditos": 2,
     "unidade_responsavel": "Sistemas e Computação",
-    "prerequisitos": [],
+    "prerequisitos": [
+      "A depender da ementa da disciplina"
+    ],
+    "corequisitos": [],
     "ementa": "Ementa livre para tópicos nas áreas de Ciência da Computação.",
     "bibliografia_basica": [
       "Bibliografia especıf́ ica para o tópico a ser abordado."
@@ -1854,6 +1939,7 @@
     "prerequisitos": [
       "Engenharia de Software"
     ],
+    "corequisitos": [],
     "ementa": "Terminologia e conceitos fundamentais, níveis e tipos de teste, processos e atividades de teste, princípios e ética, análise estática automática e inspeção de software, o modelo V, planejamento de testes, gerência de processos e artefatos de teste, critérios e ferramentas de cobertura, técnicas e estratégias clássicas Black-box e White-box: partição por equivalências, valores limite, tabelas de decisão, teste de caminhos, teste de fluxo de dados. Técnicas de teste de integração, teste de sistema, teste de aceitação, teste de regressão, teste de GUI, teste de stress, teste de carga, teste de configuração, teste randômico, teste exploratório. Geração, seleção e priorização de casos de teste. Projeto de casos de teste e seleção de dados de teste. Ferramentas de Teste. Teste aplicado a domínios específicos.",
     "bibliografia_basica": [
       "1. Jorgensen, P. Software Testing: A Craftsman’s Approach, Third Edition, 2008.",
@@ -1877,6 +1963,7 @@
       "Banco de Dados I",
       "Estatística Aplicada"
     ],
+    "corequisitos": [],
     "ementa": "Objetivo e crítica de visualização de dados; tarefas de análise de dados e suporte de visualizações a essas tarefas; princípios para o projeto de visualização de dados; visualizações interativas; visualizações com uma e com múltiplas visões; visualizações de diferentes tipos de dados.",
     "bibliografia_basica": [
       "1. WILKE, C. O. Fundamentals of Data Visualization: A Primer of Making Informative and Compelling Figures. 1ª Edição, O’Reilly Media, 2019, ISBN: 978-1492031086."
@@ -1885,71 +1972,6 @@
       "1. KNAFLIC, C. N. Storytelling com dados: um guia sobre visualização de dados para profissionais de negócios. Tradução da 1ª Edição. Alta Books, 2018, ISBN: 978-",
       "8550804682.",
       "2. MUNZNER, T. Visualization Analysis and Design: Principles, Techniques, and Practice. 1ª Edição, AK Peters, 2014. ISBN: 978-1466508910. 139"
-    ]
-  },
-  {
-    "nome": "Projeto de Sistemas Operacionais",
-    "carga_horaria": 60,
-    "creditos": 4,
-    "unidade_responsavel": "Sistemas e Computação",
-    "prerequisitos": [
-      "Sistemas Operacionais"
-    ],
-    "ementa": "Laboratório de projeto de sistemas operacionais com abordagem prática e experimental, voltado à consolidação dos conceitos de Sistemas Operacionais por meio de implementação, instrumentação e avaliação de desempenho de mecanismos de um kernel didáticos. Desenvolvimento de extensões para kernels envolvendo chamadas de sistema, escalonamento de processos, gerência de memória virtual, concorrência e sincronização, sistemas de arquivos e comunicação entre processos. Metodologia experimental para avaliação de desempenho de sistemas: definição de métricas, instrumentação de kernel, ferramentas de medição e análise estatística de resultados. Estudo comparativo entre os mecanismos implementados nos kernels educacionais e as soluções adotadas em kernels de produção (ex.: Linux).  Desenvolvimento de projeto final envolvendo extensão do kernel e/ou avaliação experimental de desempenho, com documentação técnica e apresentação dos resultados.",
-    "bibliografia_basica": [
-      "1. Cox, R.; Kaashoek, F.; Morris, R. xv6: a simple, Unix-like teaching operating system (RISC-V version). MIT PDOS, 2024. Disponível em: pdos.csail.mit.edu/6.1810.",
-      "2. Arpaci-Dusseau, R.H.; Arpaci-Dusseau, A.C. Operating Systems: Three Easy Pieces.  Arpaci-Dusseau Books, 2018 (acesso aberto, ostep.org).",
-      "3. Anderson, T.; Dahlin, M. Operating Systems: Principles and Practice, 2ª Ed. – Recursive Books, 2014"
-    ],
-    "bibliografia_complementar": [
-      "Love, R. Linux Kernel Development, 3ª Ed. – Ed. Addison-Wesley, 2010.",
-      "Bovet, D.P.; Cesati, M. Understanding the Linux Kernel, 3ª Ed. – Ed. O'Reilly Media, 2005.",
-      "Gregg, B. Systems Performance: Enterprise and the Cloud, 2ª Ed. – Ed. Addison-Wesley, 2020.",
-      "Corbet, J.; Rubini, A.; Kroah-Hartman, G. Linux Device Drivers, 3ª Ed. – Ed. O'Reilly Media, 2005.",
-      "MIT PDOS. 6.1810: Operating System Engineering – Course Materials. Disponível em: pdos.csail.mit.edu/6.1810.",
-      "University of California, Berkeley. CS162: Operating Systems and Systems Programming – Course Materials Disponível em: cs162.eecs.berkeley.edu."
-    ]
-  },
-  {
-    "nome": "Desenvolvimento de Software com Agentes e IA Generativa",
-    "carga_horaria": 60,
-    "creditos": 4,
-    "unidade_responsavel": "Sistemas e Computação",
-    "prerequisitos": [
-      "Engenharia de Software",
-      "Inteligência Artificial"
-    ],
-    "ementa": "Fundamentos de agentes de Inteligência Artificial e modelos de linguagem de grande porte (LLMs) aplicados ao desenvolvimento de software, com casos da indústria e de projetos open source. Arquitetura de agentes de codificação. Prompting como técnica de engenharia. Model Context Protocol (MCP) e skills como mecanismos de extensão e especialização de agentes. Desenvolvimento orientado por especificação (Spec-Driven Development) e geração de código assistida por agentes. Qualidade de software baseada em agentes: verificação arquitetural, avaliação e revisão de código, refatoração e testes. Organização de repositórios para uso por agentes. Limitações, riscos e impacto dos LLMs e agentes na prática contemporânea do desenvolvimento de software, incluindo o papel do desenvolvedor, qualidade, produtividade e ética.",
-    "bibliografia_basica": [
-      "PEREIRA, S. Generative AI for software development. USA: O'Reilly Media, Inc. https://learning.  oreilly. com/library/view/generative-ai-for/9781098162269, v. 5, p. 2025, 2025.",
-      "YANG, John et al. SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering. Advances in Neural Information Processing Systems, v. 37, p. 50528-50652, 2024."
-    ],
-    "bibliografia_complementar": [
-      "TAULLI, Tom. AI-Assisted Programming. O'Reilly Media, Inc., 2024.",
-      "LANHAM, Micheal. AI agents in action. Simon and Schuster, 2025.",
-      "EBERT, Christof; LOURIDAS, Panos. Generative AI for software practitioners. IEEE software, v.  40, n. 4, p. 30-38, 2023.",
-      "NGUYEN-DUC, Anh; ABRAHAMSSON, Pekka; KHOMH, Foutse (Ed.). Generative AI for effective software development. Cham: Springer, 2024."
-    ]
-  },
-  {
-    "nome": "Desenvolvimento de Software com Agentes e IA Generativa",
-    "carga_horaria": 60,
-    "creditos": 4,
-    "unidade_responsavel": "Sistemas e Computação",
-    "prerequisitos": [
-      "Engenharia de Software",
-      "Inteligência Artificial"
-    ],
-    "ementa": "Fundamentos de agentes de Inteligência Artificial e modelos de linguagem de grande porte (LLMs) aplicados ao desenvolvimento de software, com casos da indústria e de projetos open source. Arquitetura de agentes de codificação. Prompting como técnica de engenharia. Model Context Protocol (MCP) e skills como mecanismos de extensão e especialização de agentes. Desenvolvimento orientado por especificação (Spec-Driven Development) e geração de código assistida por agentes. Qualidade de software baseada em agentes: verificação arquitetural, avaliação e revisão de código, refatoração e testes. Organização de repositórios para uso por agentes. Limitações, riscos e impacto dos LLMs e agentes na prática contemporânea do desenvolvimento de software, incluindo o papel do desenvolvedor, qualidade, produtividade e ética.",
-    "bibliografia_basica": [
-      "PEREIRA, S. Generative AI for software development. USA: O'Reilly Media, Inc. https://learning.  oreilly. com/library/view/generative-ai-for/9781098162269, v. 5, p. 2025, 2025.",
-      "YANG, John et al. SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering. Advances in Neural Information Processing Systems, v. 37, p. 50528-50652, 2024."
-    ],
-    "bibliografia_complementar": [
-      "TAULLI, Tom. AI-Assisted Programming. O'Reilly Media, Inc., 2024.",
-      "LANHAM, Micheal. AI agents in action. Simon and Schuster, 2025.",
-      "EBERT, Christof; LOURIDAS, Panos. Generative AI for software practitioners. IEEE software, v.  40, n. 4, p. 30-38, 2023.",
-      "NGUYEN-DUC, Anh; ABRAHAMSSON, Pekka; KHOMH, Foutse (Ed.). Generative AI for effective software development. Cham: Springer, 2024."
     ]
   }
 ]

@@ -1,16 +1,45 @@
 import argparse
 import json
+import os
 import re
+from difflib import SequenceMatcher
 
 import pdfplumber
 
-
-OUTPUT_PATH = "disciplinas.json"
-
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_PATH = os.path.join(SCRIPT_DIR, "..", "dados", "disciplinas.json")
 
 REGEX1 = r"\d+\s+Ciência da Computação\s*–\s*UASC/UFCG\s*–\s*Projeto Pedagógico"
 REGEX2 = r"Ciência da Computação\s*–\s*UASC/UFCG\s*–\s*Projeto Pedagógico\s*\d*"
 REGEX3 = r"Ciência da Computação\s*–\s*UASC/UFCG\s*–\s*Projeto Pedagógico"
+
+TRUNCAMENTOS_COMUNS = {
+    "Impl": "Implementação",
+    "Algor": "Algorithms",
+    "Arq": "Architecture",
+    "Aut": "Automatic",
+    "Conhec": "Conhecimento",
+    "Desc": "Descritiva",
+    "Estat": "Estatística",
+    "Fund": "Fundamentos",
+    "Ger": "Gerenciamento",
+    "Inter": "Internet",
+    "Intro": "Introdução",
+    "Ling": "Linguagem",
+    "Mat": "Matemática",
+    "Org": "Organização",
+    "Padr": "Padrões",
+    "Proc": "Processamento",
+    "Prog": "Programação",
+    "Red": "Redes",
+    "Sist": "Sistemas",
+    "Soft": "Software",
+    "Tel": "Telecomunicações",
+    "Ver": "Verificação",
+}
+
+REGEX_SECAO = r"^[A-Z]\.\s+Componentes?\s+Curriculares?\s+\S+.*$"
+
 
 def limpa_texto(texto):
     if not texto:
@@ -19,13 +48,15 @@ def limpa_texto(texto):
     for regex in (REGEX1, REGEX2, REGEX3):
         texto = re.sub(regex, "", texto, flags=re.IGNORECASE)
 
+    texto = re.sub(REGEX_SECAO, "", texto, flags=re.MULTILINE)
+
     return " ".join(texto.split())
 
 
 def extrai_texto_do_apendice(pdf_path):
     texto = []
     with pdfplumber.open(pdf_path) as pdf:
-        IDX_PAGINA_INICIAL_DAS_EMENTAS = 41 
+        IDX_PAGINA_INICIAL_DAS_EMENTAS = 41
         for page in pdf.pages[IDX_PAGINA_INICIAL_DAS_EMENTAS:]:
             page_text = page.extract_text() or ""
             texto.append(page_text)
@@ -48,7 +79,7 @@ def extrai_campo_raw(bloco, campo, outros_campos):
     Extrai conteúdo bruto após um campo até o próximo campo conhecido.
     """
     fn_esc = re.escape(campo)
-    others = [re.escape(f) for f in outros_campos if f != campo]
+    others = [re.escape(f) + r"\s*:" for f in outros_campos if f != campo]
 
     pattern = rf"{fn_esc}\s*:\s*(.*?)\s*(?=" + "|".join(others) + r"|$)"
     match = re.search(pattern, bloco, re.DOTALL | re.IGNORECASE)
@@ -69,16 +100,15 @@ def parse_pre_reqs(texto):
         or "nenhum" in texto.lower()
         or texto.lower() == "não há"
         or texto.lower() == "nao ha"
-        or "a depender da ementa" in texto.lower()
     ):
         return []
 
-    # separa por vírgula, quebra de linha ou 'e'
-    partes = re.split(r",|\n|\be\b", texto)
+    # separa por vírgula ou quebra de linha
+    partes = re.split(r",|\n", texto)
     return [
         p.strip()
         for p in partes
-        if p.strip() and p.strip().lower() != "e" and len(p.strip()) > 1
+        if p.strip() and len(p.strip()) > 1
     ]
 
 
@@ -95,7 +125,72 @@ def parse_bibliografia(texto_raw):
     return result
 
 
-def parse_disciplina(block):
+def resolve_nome_prereq(nome_raw, nomes_conhecidos):
+    """
+    Resolve o nome bruto de um pré-requisito para o nome conhecido mais próximo.
+    """
+    nome_lower = nome_raw.lower().strip()
+    if nome_lower in [n.lower() for n in nomes_conhecidos]:
+        for n in nomes_conhecidos:
+            if n.lower() == nome_lower:
+                return n
+
+    melhor_score = 0
+    melhor_nome = None
+    for n in nomes_conhecidos:
+        score = SequenceMatcher(None, nome_lower, n.lower()).ratio()
+        if score > melhor_score:
+            melhor_score = score
+            melhor_nome = n
+
+    if melhor_score >= 0.6:
+        return melhor_nome
+
+    return nome_raw
+
+
+def completa_truncamento(nome):
+    """
+    Completa nomes truncados usando o mapeamento TRUNCAMENTOS_COMUNS.
+    """
+    if not nome or len(nome) > 20:
+        return nome
+    partes = nome.split()
+    resultado = []
+    for p in partes:
+        if p in TRUNCAMENTOS_COMUNS:
+            resultado.append(TRUNCAMENTOS_COMUNS[p])
+        else:
+            resultado.append(p)
+    return " ".join(resultado)
+
+
+def separa_pre_coreq(texto):
+    """
+    Separa o texto de pré-requisitos do texto de co-requisitos.
+    """
+    if not texto:
+        return "", ""
+    parts = re.split(r"\bCO-REQUISITO\b[:\s]*", texto, flags=re.IGNORECASE)
+    pre = parts[0].strip()
+    coreq = parts[1].strip() if len(parts) > 1 else ""
+    return pre, coreq
+
+
+def _limpa_marcadores_secao(texto):
+    """
+    Remove marcadores de seção do PDF (A., B., C.) que vazam para blocos de disciplinas.
+    """
+    return re.sub(
+        r"^[A-Z]\.\s+(Componentes?\s+Curriculares?|Componente\s+Curricular\s+Complementar\s+Obrigatório)\b.*$",
+        "",
+        texto,
+        flags=re.MULTILINE,
+    )
+
+
+def parse_disciplina(block, nomes_conhecidos):
+    block = _limpa_marcadores_secao(block)
     linhas = [l.strip() for l in block.split("\n") if l.strip()]
 
     nome = None
@@ -113,6 +208,9 @@ def parse_disciplina(block):
         "EMENTA",
         "BIBLIOGRAFIA BÁSICA",
         "BIBLIOGRAFIA COMPLEMENTAR",
+        "Componentes Curriculares Obrigatórios",
+        "Componente Curricular Complementar Obrigatório",
+        "Componentes Curriculares Optativos",
     ]
 
     carga_horaria = None
@@ -136,21 +234,32 @@ def parse_disciplina(block):
         re.DOTALL | re.IGNORECASE,
     )
     prereq_text = None
+    coreq_text = None
     if m_prereq:
         prereq_raw = " ".join(m_prereq.group(1).split())
-        prereq_text = prereq_raw.rstrip(":")
+        prereq_raw = prereq_raw.rstrip(":")
+        prereq_text, coreq_text = separa_pre_coreq(prereq_raw)
 
     unidade_raw = extrai_campo_raw(block, "UNIDADE ACADÊMICA RESPONSÁVEL", campos)
     ementa_raw = extrai_campo_raw(block, "EMENTA", campos)
     bib_basica_raw = extrai_campo_raw(block, "BIBLIOGRAFIA BÁSICA", campos)
     bib_complementar_raw = extrai_campo_raw(block, "BIBLIOGRAFIA COMPLEMENTAR", campos)
 
+    prereqs = parse_pre_reqs(prereq_text)
+    prereqs = [completa_truncamento(p) for p in prereqs]
+    prereqs = [resolve_nome_prereq(p, nomes_conhecidos) for p in prereqs]
+
+    coreqs = parse_pre_reqs(coreq_text)
+    coreqs = [completa_truncamento(c) for c in coreqs]
+    coreqs = [resolve_nome_prereq(c, nomes_conhecidos) for c in coreqs]
+
     data = {
         "nome": limpa_texto(nome),
         "carga_horaria": carga_horaria,
         "creditos": creditos,
         "unidade_responsavel": limpa_texto(unidade_raw),
-        "prerequisitos": parse_pre_reqs(prereq_text),
+        "prerequisitos": prereqs,
+        "corequisitos": coreqs,
         "ementa": limpa_texto(ementa_raw),
         "bibliografia_basica": parse_bibliografia(bib_basica_raw),
         "bibliografia_complementar": parse_bibliografia(bib_complementar_raw),
@@ -172,17 +281,30 @@ def main():
 
     print(f"Encontradas {len(blocos_disciplinas)} blocos de disciplinas")
 
+    nomes_conhecidos = []
+    for bloco in blocos_disciplinas:
+        linhas = [l.strip() for l in bloco.split("\n") if l.strip()]
+        if linhas and linhas[0].startswith("COMPONENTE CURRICULAR:"):
+            rem = linhas[0].replace("COMPONENTE CURRICULAR:", "").strip()
+            if rem:
+                nomes_conhecidos.append(limpa_texto(rem))
+            elif len(linhas) > 1:
+                nomes_conhecidos.append(limpa_texto(linhas[1]))
+
     disciplinas = []
     for bloco in blocos_disciplinas:
-        d = parse_disciplina(bloco)
+        d = parse_disciplina(bloco, nomes_conhecidos)
         if d["nome"]:  # filtro básico
             disciplinas.append(d)
 
+    saida = os.path.abspath(OUTPUT_PATH)
+    os.makedirs(os.path.dirname(saida), exist_ok=True)
+
     print(f"Salvando JSON com {len(disciplinas)} disciplinas...")
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+    with open(saida, "w", encoding="utf-8") as f:
         json.dump(disciplinas, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Arquivo gerado: {OUTPUT_PATH}")
+    print(f"Arquivo gerado: {saida}")
 
 
 if __name__ == "__main__":
